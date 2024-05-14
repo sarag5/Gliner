@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "l1-gliner"
+version = "0.1.0"
+description = ""
+authors = ["sarag5"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gliner = "^0.1.13"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
