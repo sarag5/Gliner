@@ -1,0 +1,23 @@
+version: 3
+
+tasks:
+  setup:
+    desc: Install dependencies using pnpm
+    cmds:
+      - which poetry || (echo "ERROR, please install poetry" >&2; exit 1)
+      - poetry install
+
+  run:
+    desc: Run locally.
+    cmds:
+      - poetry run python app.py
+
+  format-check:
+    desc: Format check the code.
+    cmds:
+      - poetry run black --check .
+
+  format:
+    desc: Format check the code.
+    cmds:
+      - poetry run black .
