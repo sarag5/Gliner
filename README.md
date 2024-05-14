@@ -30,3 +30,6 @@ To use this model, you must install the GLiNER Python library:
 ## Usage
 Once you've downloaded the GLiNER library, you can import the GLiNER class. You can then load this model using `GLiNER.from_pretrained` and predict entities with `predict_entities`.
 
+## Reference 
+
+https://github.com/urchade/GLiNER
